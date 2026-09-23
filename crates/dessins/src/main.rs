@@ -46,7 +46,7 @@ fn update_active_dessin(
 }
 
 fn draw_dessin(draw: Single<&Draw>, model: Res<Model>) {
-    // TODO: alpha does not work https://github.com/supiket/dessins/issues/61
+    // TODO: alpha does not work https://github.com/swwallowws/dessins/issues/61
     draw.background().srgba(0.1, 0.1, 0.1, 0.85);
 
     model.draw_points(draw);
