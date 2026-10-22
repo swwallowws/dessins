@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        background: linear-gradient(
+          135deg,
+          white 0%,
+          white 49%,
+          black 49%,
+          black 51%,
+          white 51%,
+          white 100%
+        ) repeat;
+        background-size: 20px 20px;
+      }
+
+      canvas {
+        background-color: white;
+      }
+
+      canvas:focus {
+          outline: none;
+      }
+
+      body, html {
+          margin: 0;
+          padding: 0;
+          width: 100vw;
+          height: 100%;
+      }
+    </style>
+    <title>Dessins géométriques et artistiques</title>
+  </head>
+  <script type="module">
+    import init from './dessins.js'
+    init()
+  </script>
+</html>
