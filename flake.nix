@@ -63,7 +63,8 @@
 
           installPhase = ''
             mkdir -p $out/target
-            cp -r target/wasm32-unknown-unknown/wasm-release/* $out/target/
+            cp target/wasm32-unknown-unknown/wasm-release/dessins.js $out/target/
+            cp target/wasm32-unknown-unknown/wasm-release/dessins_bg.wasm $out/target/
             cp index.html $out/target/
             cp favicon.ico $out/target/
             cp favicon.png $out/target/
